@@ -1,8 +1,8 @@
 name       : empathy
-version    : 3.12.10
-release    : 1
+version    : 3.12.11
+release    : 2
 source     :
-    - http://ftp.gnome.org/pub/gnome/sources/empathy/3.12/empathy-3.12.10.tar.xz : 794140c3743aa83739ef7efa9eff1950e2f718fde9dc29064fa9d616478e97cb
+    - http://ftp.gnome.org/pub/gnome/sources/empathy/3.12/empathy-3.12.11.tar.xz : d1e4ff4e5f502b7f4ca2c6140462bad2a712b82f019aea4e0a2700e77545d487
 license    :
     - GPL-2.0
     - LGPL-2.1
@@ -23,9 +23,15 @@ builddeps  :
     - pkgconfig(libnotify)
     - pkgconfig(gcr-3)
     - pkgconfig(libpulse)
+    - pkgconfig(accountsservice)
+    - pkgconfig(farstream-0.2)
+    - pkgconfig(telepathy-farstream)
+    - pkgconfig(clutter-gtk-1.0)
+    - pkgconfig(clutter-gst-2.0)
     - pkgconfig(webkitgtk-3.0)
     - pkgconfig(libsoup-2.4)
     - pkgconfig(gee-0.8)
+    - itstool
 setup      : |
     %configure
 build      : |
