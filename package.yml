@@ -1,36 +1,37 @@
 name       : empathy
-version    : 3.12.12
-release    : 3
+version    : 3.12.13
+release    : 4
 source     :
-    - http://ftp.gnome.org/pub/gnome/sources/empathy/3.12/empathy-3.12.12.tar.xz : dda22adf38772d85cd7ff611bcc1a036a6b8625bc7d146c95d4bfcdbc3ecf7cb
+    - http://ftp.gnome.org/pub/gnome/sources/empathy/3.12/empathy-3.12.13.tar.xz : b18c5e28cee570919ddd0e6aed7c138123a53a185fb569da9fbcc6bbc03b70a4
 license    :
     - GPL-2.0
     - LGPL-2.1
     - CC-BY-NC-SA-3.0
     - GFDL-1.3
+component  : network.im
 summary    : Empathy Instant Messing Client
 description: |
     Gnome's Empathy Instant Messing Client
 builddeps  :
+    - pkgconfig(accountsservice)
     - pkgconfig(cheese-gtk)
-    - pkgconfig(libsecret-1)
-    - pkgconfig(telepathy-glib)
+    - pkgconfig(clutter-gst-2.0)
+    - pkgconfig(clutter-gtk-1.0)
+    - pkgconfig(farstream-0.2)
     - pkgconfig(folks)
+    - pkgconfig(gcr-3)
+    - pkgconfig(gee-0.8)
     - pkgconfig(gnutls)
-    - pkgconfig(telepathy-logger-0.2)
     - pkgconfig(gsettings-desktop-schemas)
     - pkgconfig(libcanberra-gtk3)
     - pkgconfig(libnotify)
-    - pkgconfig(gcr-3)
     - pkgconfig(libpulse)
-    - pkgconfig(accountsservice)
-    - pkgconfig(farstream-0.2)
-    - pkgconfig(telepathy-farstream)
-    - pkgconfig(clutter-gtk-1.0)
-    - pkgconfig(clutter-gst-2.0)
-    - pkgconfig(webkitgtk-3.0)
+    - pkgconfig(libsecret-1)
     - pkgconfig(libsoup-2.4)
-    - pkgconfig(gee-0.8)
+    - pkgconfig(telepathy-farstream)
+    - pkgconfig(telepathy-glib)
+    - pkgconfig(telepathy-logger-0.2)
+    - pkgconfig(webkitgtk-3.0)
     - itstool
 setup      : |
     %configure
