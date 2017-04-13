@@ -1,6 +1,6 @@
 name       : empathy
 version    : 3.12.13
-release    : 4
+release    : 5
 source     :
     - http://ftp.gnome.org/pub/gnome/sources/empathy/3.12/empathy-3.12.13.tar.xz : b18c5e28cee570919ddd0e6aed7c138123a53a185fb569da9fbcc6bbc03b70a4
 license    :
