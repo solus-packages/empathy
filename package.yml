@@ -1,6 +1,6 @@
 name       : empathy
 version    : 3.12.14
-release    : 6
+release    : 7
 source     :
     - http://ftp.gnome.org/pub/gnome/sources/empathy/3.12/empathy-3.12.14.tar.xz : 7d86942ce97edd10ade0e6ae6a210d35e4d627fe4d223377d71fd1840bc6e3a3
 license    :
@@ -13,7 +13,7 @@ summary    : Empathy Instant Messing Client
 description: |
     Gnome's Empathy Instant Messing Client
 builddeps  :
-    - pkgconfig(accountsservice) 
+    - pkgconfig(accountsservice)
     - pkgconfig(champlain-0.12)
     - pkgconfig(cheese-gtk)
     - pkgconfig(clutter-gst-3.0)
@@ -40,7 +40,11 @@ builddeps  :
     - pkgconfig(webkit2gtk-4.0)
     - itstool
 rundeps    :
+    - telepathy-gabble
+    - telepathy-haze
     - telepathy-idle
+    - telepathy-rakia
+    - telepathy-salut
 setup      : |
     %configure
 build      : |
