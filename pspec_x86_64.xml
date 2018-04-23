@@ -2,13 +2,13 @@
     <Source>
         <Name>empathy</Name>
         <Packager>
-            <Name>Peter O&apos;Connor</Name>
-            <Email>peter@solus-project.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
-        <License>GPL-2.0</License>
-        <License>LGPL-2.1</License>
         <License>CC-BY-NC-SA-3.0</License>
         <License>GFDL-1.3</License>
+        <License>GPL-2.0-or-later</License>
+        <License>LGPL-2.1-or-later</License>
         <PartOf>network.im</PartOf>
         <Summary xml:lang="en">Empathy Instant Messing Client</Summary>
         <Description xml:lang="en">Gnome&apos;s Empathy Instant Messing Client
@@ -1415,12 +1415,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="9">
-            <Date>2018-04-14</Date>
+        <Update release="10">
+            <Date>2018-04-23</Date>
             <Version>3.12.14</Version>
             <Comment>Packaging update</Comment>
-            <Name>Peter O&apos;Connor</Name>
-            <Email>peter@solus-project.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>
